@@ -1,0 +1,61 @@
+name: Listmonk
+description: Listmonk is a self-hosted, high performance mailing list and newsletter manager. It comes as a standalone binary and the only dependency is a Postgres database.
+instructions: null
+changeLog:
+  - date: 2023-01-24
+    description: first release
+links:
+  - label: Website
+    url: https://listmonk.app/
+  - label: Documentation
+    url: https://listmonk.app/doc
+schema:
+  type: object
+  required:
+    - projectName
+    - appServiceName
+    - appServiceImage
+  properties:
+    projectName:
+      type: string
+      title: Project Name
+    appServiceName:
+      type: string
+      title: App Service Name
+      default: wordpress
+    appServiceImage:
+      type: string
+      title: App Service Image
+      default: wordpress:6
+    appAddress:
+      type: string
+      title: App Address
+      default: 0.0.0:9000
+    adminUser:
+      type: string
+      title: App Admin User
+      default: listmonk
+    adminPassword:
+      type: string
+      title: App Admin Password
+      default: listmonk
+    host:
+      type: string
+      title: Host
+      default: listmonk_db
+    port:
+      type: string
+      title: Port
+      default: 9432
+    user:
+      type: string
+      title: User
+      default: listmonk
+    password:
+      type: string
+      title: Password
+      default: listmonk
+    databaseName:
+      type: string
+      title: DatabaseName
+      default: listmonk
