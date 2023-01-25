@@ -38,7 +38,9 @@ selectField:
       title: Third Option
 ```
 
-# Setup Installation
+# Setup Installation listmonk template
+
+You can find the liskmonk template inside the template directory. 
 
 ### `Download and install docker`
 
